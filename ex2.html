@@ -26,6 +26,18 @@
     <script>
         
        // add code here
+        function changeShape() {
+            var x = document.getElementById("div1");
+            
+           
+            if (x.style.borderRadius === "50%") {
+                x.style.borderRadius = "0";
+                x.innerText = "Square";
+            } else {
+                x.style.borderRadius = "50%";
+                x.innerText = "Circle";
+            }
+        }
 
     </script>
 
