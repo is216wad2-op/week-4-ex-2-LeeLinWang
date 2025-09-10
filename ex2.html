@@ -9,6 +9,13 @@
             background-color: goldenrod;
         }
 
+        #div2 {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: goldenrod;
+        }
+
         /* add CSS code here */
 
     </style>
@@ -27,16 +34,12 @@
         
        // add code here
         function changeShape() {
-            var x = document.getElementById("div1");
+            var x = document.getElementsByTagName("div")[0];
             
-           
-            if (x.style.borderRadius === "50%") {
-                x.style.borderRadius = "0";
-                x.innerText = "Square";
-            } else {
-                x.style.borderRadius = "50%";
-                x.innerText = "Circle";
+            if (x.id != "div2"){
+                x.id = "div2";
             }
+            else {x.id = "div1";}
         }
 
     </script>
